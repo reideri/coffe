@@ -33,14 +33,16 @@
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-                <div class="col-md-6 col-lg-3 col-xs-12 col-sm-6"> <img class="img-responsive" alt="user" src="https://www.coffefit.com/img/post/17898260-30439310-5-0-1499156570-1499156573-650-1-1499156573-650-0c369e17e2-1499626569.jpg">
-                            <div class="white-box">
-                                <div class="text-muted"><span class="m-r-10"><i class="icon-calender"></i> Feb 1</span> <a class="text-muted m-l-10" href="#"><i class="fa fa-heart-o"></i> 10</a></div>
-                                <h3 class="m-t-20 m-b-20">No más de 35 Caracteres.</h3>
-                                <p>Los psicólogos revelan frases que usa un hombres que ya no ama a su pareja</p>
-                                <button class="btn btn-info btn-rounded waves-effect waves-light m-t-20">Compartir</button>
-                            </div>
-                        </div>
+            <?php foreach ($posts as $post): ?>
+                <div class="col-md-6 col-lg-3 col-xs-12 col-sm-6"> <img class="img-responsive" alt="<?php echo $post['titulo']; ?>" src="<?php echo RUTA; ?>img/post/<?php echo $post['thumb']; ?>">
+                    <div class="white-box">
+                        <!-- <div class="text-muted"><span class="m-r-10"><i class="icon-calender"></i> Feb 1</span> <a class="text-muted m-l-10" href="#"><i class="fa fa-heart-o"></i> 10</a></div>-->
+                        <h3 class="m-t-20 m-b-20"><?php echo $post['titulo']; ?></h3>
+                        <p><?php echo $post['extracto']; ?></p>
+                        <button class="btn btn-info btn-rounded waves-effect waves-light m-t-20">Compartir</button>
+                    </div>
+                </div>
+            <?php endforeach ?>
 
             </div>
             <!-- /.container-fluid -->
