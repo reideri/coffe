@@ -70,7 +70,7 @@
 
                     </li>
                     <li>
-                        <a class="profile-pic" href="#"> <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">{User}</b></a>
+                        <a class="profile-pic" href="#"> <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs"><?php echo $datos['usuario']; ?></b></a>
                     </li>
                 </ul>
             </div>
@@ -101,7 +101,7 @@
                         <a href="faqs.php" class="waves-effect"><i class="fa fa-money fa-fw" aria-hidden="true"></i>FAQ</a>
                     </li>
                     <li>
-                        <a href="singout.php" class="waves-effect"><i class="fa  fa-sign-out fa-fw" aria-hidden="true"></i>Salir</a>
+                        <a href="log-out.php" class="waves-effect"><i class="fa  fa-sign-out fa-fw" aria-hidden="true"></i>Salir</a>
                     </li>
 
 

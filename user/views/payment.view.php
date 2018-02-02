@@ -18,14 +18,17 @@
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-                <!-- /row -->
+                <?php if ($datos['ingreso'] < 20): ?>
+                  <h2>Lo Sentimos, usted no cuenta con la cantidad suficiente para recibir un pago</h2>
+                <?php else: ?>
+                  <!-- /row -->
                 <div class="row">
                   <div class="col-md-12 col-lg-4 col-sm-12">
                         <div class="panel wallet-widgets">
                             <div class="panel-body">
                                 <ul class="side-icon-text">
-                                    <li><a href="#"><span class="circle circle-md bg-success di vm"><i class="ti-plus"></i></span><span class="di vm"><h1 class="m-b-0">$0</h1><h5 class="m-t-0"></h5></span></a></li>
-                                    <p>Pagar a {CORREO PAYPAL}</p>
+                                    <li><a href="#"><span class="circle circle-md bg-success di vm"><i class="ti-plus"></i></span><span class="di vm"><h1 class="m-b-0">$<?php echo $datos['ingreso']; ?></h1><h5 class="m-t-0"></h5></span></a></li>
+                                    <p>Pagar a <?php echo $datos['email']; ?></p>
                                 </ul>
                             </div>
                         </div>
@@ -72,14 +75,14 @@
                                             <div class="form-group">
                                                 <label class="col-xs-3 control-label">Saldo a retirar</label>
                                                 <div class="col-xs-5">
-                                                    <center><h3>{SALDO}</h3></center>
+                                                    <center><h3><?php echo $datos['ingreso']; ?></h3></center>
                                             </div>
                                         </div>
                                         <div class="wizard-pane active" role="tabpanel" aria-expanded="true">
                                             <div class="form-group">
                                                 <label class="col-xs-3 control-label">Se pagara a</label>
                                                 <div class="col-xs-5">
-                                                  <center><h3>{CORREO}<small style="color: #427df4;"> Via Paypal</small></h3></center>
+                                                  <center><h3><?php echo $datos['email']; ?><small style="color: #427df4;"> Via Paypal</small></h3></center>
                                             </div>
                                         </div>
                                         <div class="wizard-pane" role="tabpanel" aria-expanded="false">
@@ -95,6 +98,7 @@
             <!-- /.container-fluid -->
 
         </div>
+                <?php endif ?>
 
         <!-- /#page-wrapper -->
     </div>

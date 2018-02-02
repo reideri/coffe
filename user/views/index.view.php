@@ -29,7 +29,7 @@
                                 <li>
                                     <div id="sparklinedash"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-success">$</i> <span class="counter text-success">0</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-success">$</i> <span class="counter text-success"><?php echo $datos['ingreso']; ?></span></li>
                             </ul>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                                 <li>
                                     <div id="sparklinedash2"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-purple"></i> <span class="counter text-purple">0</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-purple"></i> <span class="counter text-purple"><?php echo $datos['clics']; ?></span></li>
                             </ul>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                                 <li>
                                     <div id="sparklinedash3"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">0</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info"><?php echo $datos['visit']; ?></span></li>
                             </ul>
                         </div>
                     </div>
@@ -89,55 +89,20 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
                                             <th>NOMBRE</th>
                                             <th>ESTADO</th>
                                             <th>TOTAL $</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td class="txt-oflo">COFFEFIT</td>
-                                            <td><span class="text-success">ACTIVO</span></td>
-                                            <td><span class="text-success">$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td class="txt-oflo">COFFEFIT</td>
-                                            <td><span class="text-success">ACTIVO</span></td>
-                                            <td><span class="text-info">$1250</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td class="txt-oflo">COFFEFIT</td>
-                                            <td><span class="text-success">ACTIVO</span></td>
-                                            <td><span class="text-info">$1250</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td class="txt-oflo">COFFEFIT</td>
-                                            <td><span class="text-success">ACTIVO</span></td>
-                                            <td><span class="text-danger">-$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td class="txt-oflo">COFFEFIT</td>
-                                            <td><span class="text-success">ACTIVO</span></td>
-                                            <td><span class="text-success">$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td class="txt-oflo">COFFEFIT</td>
-                                            <td><span class="text-success">ACTIVO</span></td>
-                                            <td><span class="text-danger">-$14</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td class="txt-oflo">COFFEFIT</td>
-                                            <td><span class="text-success">ACTIVO</span></td>
-                                            <td><span class="text-success">$64</span></td>
-                                        </tr>
+                                        <?php foreach ($usuarios as $usuario): ?>
+                                          <tr>
+                                            <td class="txt-oflo"><?php echo $usuario['usuario']; ?></td>
+                                            <td><span class="text-success"><?php echo $usuario['status']; ?></span></td>
+                                            <td><span class="text-success"><?php echo $usuario['ingreso']; ?></span></td>
+                                          </tr>
+                                        <?php endforeach ?>
+                                  
                                     </tbody>
                                 </table>
                             </div>

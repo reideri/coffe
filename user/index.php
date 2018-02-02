@@ -26,7 +26,9 @@ if (isset($_SESSION['email'])) {
       ]);
     }
 
-
+    $users = $conexion->prepare('SELECT * FROM registro WHERE status = :status ORDER BY ingreso DESC LIMIT 10');
+    $users->execute([':status' => 'ACTIVE']);
+    $usuarios = $users->fetchAll();
     $posts = contarDatos('post', $conexion);
     require 'views/index.view.php';
   }
