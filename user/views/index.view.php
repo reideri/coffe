@@ -1,81 +1,196 @@
-<?php
-   include 'views/requires/headerDash.php';
-?>
+    <?php include 'requires/headerDash.php' ?>  
 
-    <!-- Main content -->
-    <section class="content">
+        <!-- ============================================================== -->
+        <!-- Page Content -->
+        <!-- ============================================================== -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Panel de usuario</h4> </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <a  target="_blank" class="btn btn-danger pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light">soporte@coffefit.com</a>
+                        <ol class="breadcrumb">
+                            <li><a href="index.php">Panel de usuario</a></li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+                <!-- ============================================================== -->
+                <!-- Different data widgets -->
+                <!-- ============================================================== -->
+                <!-- .row -->
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Ingresos</h3>
+                            <ul class="list-inline two-part">
+                                <li>
+                                    <div id="sparklinedash"></div>
+                                </li>
+                                <li class="text-right"><i class="ti-arrow-up text-success">$</i> <span class="counter text-success">0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">CLICS</h3>
+                            <ul class="list-inline two-part">
+                                <li>
+                                    <div id="sparklinedash2"></div>
+                                </li>
+                                <li class="text-right"><i class="ti-arrow-up text-purple"></i> <span class="counter text-purple">0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Visitas</h3>
+                            <ul class="list-inline two-part">
+                                <li>
+                                    <div id="sparklinedash3"></div>
+                                </li>
+                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">0</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--/.row -->
+                <!--row -->
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="white-box">
+                            <h3 class="box-title">Información de gran importancia</h3>
+                            <ul class="list-inline text-right">
+                                <li>
 
-      <div class="row">
-        <!-- Left col -->
-        <div class="col-md-8">
-          <!-- MAP & BOX PANE -->
-         <div class="alert alert-info alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-info"></i> Noticia de Interes!</h4>
-                Estimado usuario/a, favor de abstenerse a una revisión de su cuenta y/o suspensión de la misma por realizar actividades sospechosas que violen nuestros terminos y condiciones; si su cuenta de un momento a otro se encuentra suspendida le invitamos a que revise su correo en el cual usted se registró, donde le estaremos contactando para confirmar asuntos con usted. Si en los 5 días posteriores a que llegue este correo no responde, su cuenta será suspendida. ATTE - COFFEFIT.COM
-              </div>
-              <a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a> Contáctanos si tienes dudas!
+                                <li>
 
-<!-- Modal -->
-<section class="content">
-      <div class="callout callout-info">
-        <h4>Recordatorio!</h4>
-        <p>Los cobros pueden ser realizados todos los 15 o 1 de cada mes.</p>
-      </div>
+                            </ul>
+                              <h2>Aumenta tus ganancias con trafico real de Estados Unidos.</h2>
+                              <h2>Norte América<span class="text-success"> $2</span> | Latino América<span class="text-success"> $1</span></h2>
 
-      <div class="row">
-        <div class="col-xs-12">
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- table -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <div class="white-box">
+                            <div class="col-md-3 col-sm-4 col-xs-6 pull-right">
+                              
+                            </div>
+                            <h3 class="box-title">TOP 7 : USUARIOS CON MÁS INFLUENCIA</h3>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>NOMBRE</th>
+                                            <th>ESTADO</th>
+                                            <th>TOTAL $</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="txt-oflo">COFFEFIT</td>
+                                            <td><span class="text-success">ACTIVO</span></td>
+                                            <td><span class="text-success">$24</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="txt-oflo">COFFEFIT</td>
+                                            <td><span class="text-success">ACTIVO</span></td>
+                                            <td><span class="text-info">$1250</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="txt-oflo">COFFEFIT</td>
+                                            <td><span class="text-success">ACTIVO</span></td>
+                                            <td><span class="text-info">$1250</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td class="txt-oflo">COFFEFIT</td>
+                                            <td><span class="text-success">ACTIVO</span></td>
+                                            <td><span class="text-danger">-$24</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td class="txt-oflo">COFFEFIT</td>
+                                            <td><span class="text-success">ACTIVO</span></td>
+                                            <td><span class="text-success">$24</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td class="txt-oflo">COFFEFIT</td>
+                                            <td><span class="text-success">ACTIVO</span></td>
+                                            <td><span class="text-danger">-$14</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td class="txt-oflo">COFFEFIT</td>
+                                            <td><span class="text-success">ACTIVO</span></td>
+                                            <td><span class="text-success">$64</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- chat-listing & recent comments -->
+                <!-- ============================================================== -->
 
-              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success">
-                Información Importante
-              </button>
-
-      </div>
-
-
-        <div class="modal modal-success fade" id="modal-success" style="display: none;">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">×</span></button>
-                <h4 class="modal-title">Gana 50$ Rápido en Coffefit! 1$ por 1k de Visitas</h4>
-              </div>
-              <div class="modal-body">
-                <H3>¡Aprovecha! Gana $1 * 1k de visitas!</H3>
-                <p>Evento válido hasta el 11/11/17</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">No me interesa!</button>
-                <button type="button" class="btn btn-outline" data-dismiss="modal">Ok, está bien!</button>
-
-              </div>
             </div>
-            <!-- /.modal-content -->
-          </div>
-          <!-- /.modal-dialog -->
+            <!-- /.container-fluid -->
+
         </div>
-        <!-- /.modal -->
-
-
-    </section>
-          <!-- /.form-group -->
-        </form>
-      </div>
-      <!-- /.tab-pane -->
+        <!-- ============================================================== -->
+        <!-- End Page Content -->
+        <!-- ============================================================== -->
     </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <style>
+    .jq-toast-wrap {
+      display: none;
+    }
+    </style>
+    <?php include 'requires/footer.php'?>
 
-  </aside>
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Counter js -->
+    <script src="../plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="../plugins/bower_components/counterup/jquery.counterup.min.js"></script>
+    <!-- chartist chart -->
+    <script src="../plugins/bower_components/chartist-js/dist/chartist.min.js"></script>
+    <script src="../plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <!-- Sparkline chart JavaScript -->
+    <script src="../plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script src="js/dashboard1.js"></script>
+    <script src="../plugins/bower_components/toast-master/js/jquery.toast.js"></script>
 
-</div>
-<!-- ./wrapper -->
-
-<?php
-   include 'views/requires/footer.php';
-?>
 </body>
+
 </html>
