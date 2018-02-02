@@ -15,10 +15,10 @@ sass/*
 sign-up/*
 views/*
 .htacess
-banned.php
+*.php
 favicon.ico
-index.php
+*.php
 .logo.png
-log-out.php
-privacy.php
-redirect.php
+*.php
+pr*.php
+*.php
