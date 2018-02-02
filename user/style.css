@@ -1,0 +1,22 @@
+body h1,h2,h3,h4,h5,h6,p,a,content
+{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.caja
+{
+  display: inline-block;
+  width: 32%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.caja img
+{
+  border-radius: 20px;
+}
+
+.caja:hover{
+ -webkit-box-shadow: 2px 2px 25px -2px rgba(0,0,0,0.33);
+-moz-box-shadow: 2px 2px 25px -2px rgba(0,0,0,0.33);
+box-shadow: 2px 2px 25px -2px rgba(0,0,0,0.33);
+}

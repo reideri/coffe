@@ -1,0 +1,26 @@
+body{
+	
+	background-color: #1479ff;
+}
+
+.caja{
+	padding: 100px;
+	width: 690px;
+	height: 400px;
+	overflow: auto;
+	float: left;
+}
+
+.cajainfo{
+	float: left;
+	padding: 100px;
+	width: 600px;
+	height: 400px;
+
+	overflow: auto;
+}
+
+.cajainfo p {
+font-family: 'Roboto', sans-serif;
+
+}

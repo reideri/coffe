@@ -1,0 +1,33 @@
+body{
+	background: #3aa0ff;
+}
+
+
+.caja	{
+	width: 500px;
+	height: 550px;
+	background: #fff;
+	padding: 40px;
+	margin: 20px auto;
+
+	overflow: auto;
+}
+
+.caja h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	line-height: 50px;
+	color: #3aa0ff;
+	font-weight: normal;
+	text-align: center;
+}
+
+.caja hr{
+	opacity: .2;
+	color: #291528;
+	margin: 30px 50px;
+}
+
+.caja p{
+	font-family: 'Roboto', sans-serif;
+}
