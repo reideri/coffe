@@ -1,11 +1,11 @@
 <?php
 
-define('RUTA', 'http://localhost/coffefit/');
+define('RUTA', 'https://coffefit.com/');
 
 $bd_config = [
-  'db_name' => 'coffefit',
-  'username' => 'coffefitAdmin',
-  'password' => 'coffefit2017VEN'
+  'db_name' => 'u506600772_coffe',
+  'username' => 'u506600772_coffe',
+  'password' => 'coffefitVEN2017'
 ];
 
 $dates_config = [
