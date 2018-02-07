@@ -14,6 +14,9 @@ if (isset($_SESSION['email'])) {
     header('Location: '.RUTA.'sign-up/confirm.php');
   } else {
     $posts = contarDatos('post', $conexion);
+    if ($datos['ingreso'] < 20) {
+      header('Location: '.RUTA);
+    }
   }
 
 
