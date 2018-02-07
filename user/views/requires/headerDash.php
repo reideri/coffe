@@ -54,7 +54,7 @@
             <div class="navbar-header">
                 <div class="top-left-part">
                     <!-- Logo -->
-                    <a class="logo" href="index.html">
+                    <a class="logo" href="">
                         <!-- Logo icon image, you can use font-icon also --><b>
                         <!--This is dark logo icon-->
                      </b>
