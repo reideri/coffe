@@ -39,6 +39,7 @@
                         <!-- <div class="text-muted"><span class="m-r-10"><i class="icon-calender"></i> Feb 1</span> <a class="text-muted m-l-10" href="#"><i class="fa fa-heart-o"></i> 10</a></div>-->
                         <h3 class="m-t-20 m-b-20"><?php echo $post['titulo']; ?></h3>
                         <p><?php echo $post['extracto']; ?></p>
+                        <div class="fb-share-button" data-href="<?php echo RUTA.'redirect.php?id='.$post['id'].'&usuario='.$datos['usuario'].'&provider='.$provider['proveedor']; ?>" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
                         <button class="btn btn-info btn-rounded waves-effect waves-light m-t-20">Compartir</button>
                     </div>
                 </div>
@@ -46,7 +47,7 @@
 
             </div>
             <!-- /.container-fluid -->
-    <?php include 'requires/footer.php'?>
+    <?php include 'requires/footer.php'; ?>
         </div>
         <!-- ============================================================== -->
         <!-- End Page Content -->
@@ -54,7 +55,15 @@
     </div>
     <!-- /#wrapper -->
     <!-- jQuery -->
-    <?php include 'footer.php'?>
+    <?php include 'footer.php'; ?>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
