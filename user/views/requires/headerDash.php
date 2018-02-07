@@ -50,7 +50,7 @@
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
-        <nav class="navbar navbar-default navbar-static-top m-b-0">
+        <nav class="navbar navbar-default navbar-static-top m-b-0 open-close">
             <div class="navbar-header">
                 <div class="top-left-part">
                     <!-- Logo -->
