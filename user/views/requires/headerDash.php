@@ -56,7 +56,7 @@
                     <!-- Logo -->
                     <a class="logo">
                         <b>
-                           <img src="<?php echo RUTA.'img/menu.png' ?>"> <!--This is dark logo icon-->
+                           <img src="<?php echo RUTA.'img/menu.png'; ?>" width="30" height="30"> <!--This is dark logo icon-->
                         </b>
                         <!-- Logo text image you can use text also --><span class="hidden-xs">
                         <!--This is dark logo text--><img src="../plugins/images/admin-text.png" alt="home" class="dark-logo" /><!--This is light logo text--><img src="../plugins/images/admin-text-dark.png" alt="home" class="light-logo" />
