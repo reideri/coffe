@@ -94,9 +94,11 @@
                     <li>
                         <a href="noticias.php" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i>Notas</a>
                     </li>
-                    <li>
+                    <?php if ($datos['ingreso'] >= 20): ?>
+                   <li>
                         <a href="payment.php" class="waves-effect"><i class="fa fa-money fa-fw" aria-hidden="true"></i>Monedero</a>
                     </li>
+                    <?php endif ?>
                     <li>
                         <a href="faqs.php" class="waves-effect"><i class="fa fa-money fa-fw" aria-hidden="true"></i>FAQ</a>
                     </li>
